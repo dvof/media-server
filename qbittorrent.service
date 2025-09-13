@@ -1,0 +1,11 @@
+[Unit]
+Description=qbittorrent-nox
+After=network.target
+
+[Service]
+User=daan
+ExecStart=/usr/bin/qbittorrent-nox
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
